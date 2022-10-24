@@ -1,5 +1,4 @@
 import datetime
-from re import L
 from time import sleep
 from turtle import color
 from pymongo import MongoClient,errors
