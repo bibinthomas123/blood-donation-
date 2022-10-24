@@ -171,9 +171,8 @@ def bloodBank():
     print("Welcome to blood bank !!!")
     blood = str(input("Enter the blood group:")).upper()
     bloodlist = ["A+","A-","AB+","AB-","B+","B-","O+","O-"]
-
-    if blood in bloodlist:
-        query_blood = list(bloodb.find({"bloodgrp":blood}))
+    query_blood = list(bloodb.find({"bloodgrp":blood}))
+    if blood in bloodlist:        
         print("the amount of the blood available is {} packs".format(query_blood[0]["count"]))
     else:
         print(colors.FAIL+"Please re-enter the blood group!!! "+colors.ENDC)
