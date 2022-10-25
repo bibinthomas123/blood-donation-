@@ -104,8 +104,6 @@ def patient():
             _extracted_from_patient_12(year, today)
         except custom:
             print(f"{colors.FAIL}ERROR WITH ADDING DATA OR DATABASE ERROR !!!!{colors.ENDC}")
-
-
         except KeyboardInterrupt:
             print(f"{colors.FAIL}Terminating......{colors.ENDC}")
 
